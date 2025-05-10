@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Spotify Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body class="bg-black">
+    <header>
+        <img class="hamburger invert" src="img/hamburger.svg" alt="hamburger">
+            <div class="logo"><img class="invert cursor-pointer" src="img/logo.svg" alt="logo"></div>
+            <div class="home ">
+                <button> <img class=" svg invert cursor-pointer" src="img/home.svg" alt="home"></button>
+            </div>
+        <div class="nav">
+            <div class="search">
+                <div><img class="svg invert cursor-pointer" src="img/search.svg" alt="search"></div>
+                <div class="input-key">
+                    <input type="search" placeholder="What do you want to play?">
+                    <span class="cursor-pointer">
+                        <kbd>Ctrl</kbd>
+                        <kbd>K</kbd>
+                    </span>
+                </div>
+                <p class="left-vertical-bar">|</p>
+                <div class="bucket-img svg invert cursor-pointer"><img src="img/bucket.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="right-nav">
+            <div class="btn">
+                <button class="btn-1 cursor-pointer"><span>Premium</span></button>
+                <button class="btn-2 cursor-pointer"><span>Support</span></button>
+                <button class="btn-3 cursor-pointer"><span>Download</span></button>
+            </div>
+            <div class="right-vertical-bar">
+                <p>|</p>
+            </div>
+            <div class="btn-right-side">
+                <button class="btn-4 cursor-pointer">
+                    <img class="svg-2 invert" src="img/install.svg" alt="install">
+                    <span>Install App</span>
+                </button>
+                <button class="btn-5 cursor-pointer"><span>Sign up</span></button>
+                <button class="btn-6 log-in cursor-pointer"><span>Log in</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left library bg-grey border-radius m-1">
+            <div class="playlist">
+                <div>
+                    <img class="invert" src="img/playlist.svg" alt="playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <img class="close invert" src="img/close.svg" alt="close">
+            </div>
+            <div class="songlist bg-lightgrey">
+                <ul>
+                    <!-- <li>
+                        <div>
+                            <img class="invert" src="img/music.svg" alt="music">
+                            <div class="songInfo">
+                                <p>Song name</p>
+                                <p>Aritst name</p>
+                            </div>
+                        </div>
+                        <div class="playnow">
+                            <span><p>Play</p> <p>now</p></span>
+                            <span><img class="playNowBtn invert" src="img/play.svg" alt="play"></span>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="left-footer">
+                <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
+                <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
+            </div>
+
+        </div>
+
+        <div class="right bg-grey border-radius">
+            <div class="right-header">
+                <h2>Trending Songs</h2>
+                <a href="">Show all</a>
+            </div>
+            <div class="card-container">
+                <!-- <div data-folder="CS" class="card">                    
+                    <img class="play" src="img/cardPlay.svg" alt="cardPlay">                    
+                    <img src="img/img-1.jpg" alt="">
+                    <h3>Finding her</h3>
+                    <p>Kushagra, Bharat, Saaheal</p>
+                </div>
+                <div data-folder="NCS" class="card">
+                    <img class="play" src="img/cardPlay.svg" alt="cardPlay">
+                    <img src="img/img-1.jpg" alt="">
+                    <h3>Finding her</h3>
+                    <p>Kushagra, Bharat, Saaheal</p>
+                </div> -->
+
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="bar"></div>
+                    <div class="circle"></div>
+                    <div class="playbar-songTime">
+                        <div class="current-time">00:00</div>
+                        <div class="duration-time">00:00</div>
+                    </div>
+                </div>
+                <div class="btnInfo-container">
+                    <div class="playbar-songInfo"></div>
+                    <div class="play-btns cursor-pointer">
+                        <img id="previousSongBtn" src="img/prevsong.svg" alt="previous song">
+                        <img id="playSongBtn" src="img/play.svg" alt="play song">
+                        <img id="nextSongBtn" src="img/nextsong.svg" alt="">
+                    </div>
+                    <div class="volInfo">
+                        <img id="volumeBtn" class="cursor-pointer" src="img/volume.svg" alt="">
+                        <input type="range" class="range cursor-pointer">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- <div class="footer"> -->
+        <div class="para">
+            <p>Preview of Spotify</p>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <button class="cursor-pointer">Sign up free</button>
+        <!-- </div> -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
